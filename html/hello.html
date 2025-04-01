@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>first html</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+  </head>
+  <body class="ml-5 mt-2">
+    <h1
+      class="text-3xl font-bold underline text-primary hover:text-secondary accent-neutral-50"
+    >
+      Hello Tailwind
+    </h1>
+    <header class="bg-red">Header</header>
+    <nav data-id="nav">Nav</nav>
+    <section class="p-2 bg-neutral-600 m-6 rounded-lg">Section</section>
+    <article>Article</article>
+    <aside>Aside</aside>
+    <!-- method는 Post로 하는 것이 좋다.  -->
+    <form
+      id="frm"
+      name="frm"
+      method="post"
+      class="bg-primary p-4 rounded-lg box-content"
+    >
+      <div class="flex-row gap-2 md:flex-col md:justify-between md:gap-3">
+        <input
+          class="bg-green-400 rounded-lg p-2 text-black hover:bg-green-600 focus: outline-none"
+          type="text"
+          id="email"
+          placeholder="Email..."
+        />
+        <input
+          class="bg-secondary rounded-lg p-2 text-black focus: outline-none"
+          type="password"
+          id="pw"
+          placeholder="Password..."
+        />
+      </div>
+
+      <div class="mt-2 gap-2 justify-center md:flex">
+        <button class="bg-yellow-200 p-1 rounded-md" type="reset">Reset</button>
+        <button class="bg-red-200 p-1 rounded-md" type="delete">Delete</button>
+        <button class="bg-green-200 p-1 rounded-md" type="submit">
+          Submit
+        </button>
+      </div>
+    </form>
+    <ul class="list-decimal list-inside">
+      <li class="flex mr-24 gap-5">
+        <img
+          class="rounded-full h-10 w-10"
+          src="../images/blog-author-02.jpg"
+        />
+        <div class="flex flex-col">
+          <div class="text-sm text-black">Author</div>
+          <div class="text-sm text-primary">ddd</div>
+        </div>
+      </li>
+      <li>222</li>
+      <li>333</li>
+    </ul>
+    <footer>Footer</footer>
+  </body>
+</html>
